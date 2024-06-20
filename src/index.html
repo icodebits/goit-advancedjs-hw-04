@@ -8,9 +8,15 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section>
-      <h1>Example page title</h1>
-    </section>
+      <form class="search-form" id="search-form">
+        <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
+        <button type="submit">Search</button>
+      </form>
+      <div class="gallery" id="gallery">
+          <!-- Image cards will be appended here -->
+      </div>
+      <button type="button" class="load-more" id="load-more" style="display: none;">Load more</button>
     <script type="module" src="./main.js"></script>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>
